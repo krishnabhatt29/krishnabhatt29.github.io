@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .section {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3498db; /* Unique color for each section title */
+    color: #fff; /* Text color for better visibility */
+    padding: 5px;
+    margin: 0;
+  }
+  
+  /* Desktop view */
+  @media (min-width: 992px) {
+    .section {
+      width: 30%;
+      float: left;
+    }
+  }
+  
+  /* Tablet view */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 49%;
+      float: left;
+    }
+  
+    #sushi {
+      clear: both; /* Move sushi section to the next row */
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }
+  
